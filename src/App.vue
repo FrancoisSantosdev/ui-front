@@ -7,6 +7,8 @@
       </div>
     </nav>
 
+    
+
     <div class="container">
 
       <form>
@@ -72,8 +74,8 @@ export default {
 
   mounted(){
     Users.listar().then(resposta => {
-      console.log(resposta.data)
-      this.usersArray = resposta.data
+      console.log(resposta.data.users)
+      this.usersArray = resposta.data.users
     })
   }
 }
