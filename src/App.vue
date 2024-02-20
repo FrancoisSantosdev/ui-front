@@ -8,7 +8,7 @@
     </nav>
 
     
-
+    <!-- <div>{{ errors }}</div> -->
     <div class="container">
 
       <ul>
@@ -61,7 +61,7 @@
         </tbody>
       
       </table>
-
+      <!-- <p v-else>Nenhum usuário encontrado.</p> -->
     </div>
 
   </div>
