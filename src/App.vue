@@ -16,7 +16,7 @@
           <label>Nome</label>
           <input type="text" placeholder="Nome">
           <label>Quantidade</label>
-          <input type="number" placeholder="QTD">
+          <input type="number" placeholder="QTD" >
           <label>Valor</label>
           <input type="text" placeholder="Valor">
 
@@ -62,12 +62,21 @@
 
 <script>
 
+
 import Users from './services/users'
 
 export default {
 
+ 
   data(){
+
     return {
+      //  userCreate: {
+      //   nome: '',
+      //   quantidade: '',
+      //   valor: '',
+      // },
+
       usersArray: []
     }
   },
