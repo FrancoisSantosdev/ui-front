@@ -6,7 +6,7 @@ export default {
         return http.get('users')
     },
 
-    // salvar:(userCreate) => {
-    //     return http.post('users')
-    // } 
+    salvar:(userCreate) => {
+        return http.post('users/create', userCreate)
+    } 
 }
