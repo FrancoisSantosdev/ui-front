@@ -10,11 +10,13 @@ export default {
         return http.post('users/create', userCreate)
     } ,
 
-    // atualizar:(userCreate) => {
-    //     return http.post('users/{id}', userCreate)
-    // },
-
     atualizar: (userId, userData) => {
         return http.post(`users/${userId}`, userData);
+    },
+
+    apagar: (userId) => {
+        return http.delete(`users/${userId}`);
     }
+
+
 }
