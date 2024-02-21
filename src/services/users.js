@@ -8,5 +8,13 @@ export default {
 
     salvar:(userCreate) => {
         return http.post('users/create', userCreate)
-    } 
+    } ,
+
+    // atualizar:(userCreate) => {
+    //     return http.post('users/{id}', userCreate)
+    // },
+
+    atualizar: (userId, userData) => {
+        return http.post(`users/${userId}`, userData);
+    }
 }
